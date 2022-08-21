@@ -1,0 +1,64 @@
+Console.WriteLine("Ingrese el valor del semestre 1: ");
+int semestreuno = int.Parse(Console.ReadLine());
+Console.WriteLine("Valor del semestre 1: "+semestreuno);
+Console.WriteLine("");
+
+Console.WriteLine("Ingrese el valor del semestre 2: ");
+int semestredos = int.Parse(Console.ReadLine());
+Console.WriteLine("Valor del semestre 2: "+semestredos);
+Console.WriteLine("");
+
+int rentaanual = semestredos+semestreuno;
+Console.WriteLine("Renta anual: "+rentaanual);
+Console.WriteLine("");
+
+
+
+if(rentaanual < 10000){
+    Console.WriteLine("Debes pagar un impuesto del 5% a "+rentaanual);
+    int aumento;
+    int total;
+    aumento = (rentaanual * 5)/100;
+    total = aumento+rentaanual;
+    Console.WriteLine("Total impuesto a pagar: "+total);
+
+}
+if(rentaanual >= 10000 && rentaanual < 20000){
+    Console.WriteLine("Debes pagar un impuesto del 10% a "+rentaanual);
+    int aumento;
+    int total;
+    aumento = (rentaanual * 10)/100;
+    total = aumento+rentaanual;
+    Console.WriteLine("Total impuesto a pagar: "+total);
+
+}
+
+if(rentaanual >= 20000 && rentaanual < 35000){
+    Console.WriteLine("Debes pagar un impuesto del 15% a "+rentaanual);
+    int aumento;
+    int total;
+    aumento = (rentaanual * 15)/100;
+    total = aumento+rentaanual;
+    Console.WriteLine(aumento);
+    Console.WriteLine("Total impuesto a pagar: "+total);
+
+}
+
+if(rentaanual >= 35000 && rentaanual < 45000){
+    Console.WriteLine("Debes pagar un impuesto del 20% a "+rentaanual);
+    int aumento;
+    int total;
+    aumento = (rentaanual * 20)/100;
+    total = aumento+rentaanual;
+    Console.WriteLine("Total impuesto a pagar: "+total);
+
+}
+if(rentaanual >= 45000){
+    Console.WriteLine("Debes pagar un impuesto del 30% a "+rentaanual);
+    int aumento;
+    int total;
+    aumento = (rentaanual * 30)/100;
+    total = aumento+rentaanual;
+    Console.WriteLine("Total impuesto a pagar: "+total);
+
+}
