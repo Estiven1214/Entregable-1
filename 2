@@ -1,0 +1,20 @@
+Console.WriteLine("Bienvenido a la sala de juegos");
+Console.WriteLine("Ingrese su nombre");
+string nombre = Console.ReadLine();
+Console.WriteLine("Ingrese su edad");
+int edad = int.Parse(Console.ReadLine());
+double entrada = 15000;
+
+switch(edad){
+
+    case <= 4:
+    Console.WriteLine("El jugador "+nombre+" Tiene entrada gratis");
+    break;
+    case <=18:
+    Console.WriteLine("El jugador "+nombre+" ,debe pagar "+entrada+" Con un descuento de: "+entrada*0.5);
+    break;
+    case >=18:
+    Console.WriteLine("El jugador "+nombre+" ,debe pagar "+entrada+" Con un descuento de: "+entrada*0.3);
+    break;
+}
+
